@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+    <title>CV online</title>
+    <style>
+        .btn-around-pic {
+            width: 120px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body onclick="javascript:click_on_page(event)">
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <a class="navbar-brand">
+            <img src="./imagens/cv.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="curriculum vitae icon">
+        </a>
+
+        <div class="nav float-left" id="navbarNav">
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="./">About Me</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="./ah">Academic History</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="./ph">Professional History</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-white" href="./pa">Published Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./kl">Knowledge</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="container-fluid pt-4">
+        <div class="row">
+            <div class="col-3" id="cube1">
+            </div>
+            <div class="col " id="cube2">
+                <div class="row">
+                    <div class="col d-flex justify-content-end">
+                        <button id="buttonName" type="button"  onclick="javascript:showName()" class="btn rounded-circle btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">Name</p></button>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-4">
+                        <button type="button" onclick="javascript:showBirthday()"   class="btn rounded-circle  btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">Birthday</p></button>
+
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="javascript:showEmail()"  class="btn rounded-circle  btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">Email</p></button>
+
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="col-3" id="cube3">
+                
+            </div>
+            <div class="w-100"></div>
+            <div class="col" id="cube4">
+                <div class="row">
+                    <div class="col d-flex justify-content-end">
+                        <button type="button" onclick="javascript:showCity()" class="btn rounded-circle btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">City</p></button>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col d-flex justify-content-end">
+                        <button type="button" onclick="javascript:showNationality()" class="btn rounded-circle btn-danger btn-around-pic pl-0 pr-0 mt-5 nobody"><p class="h5 text-white nobody">Nationality</p></button>
+
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col text-center " id="cube5">
+                <a id="elementCenter"   class="btn btn-disabled rounded-circle nobody" style="background-image: url('./imagens/profile_pic.png');background-repeat:no-repeat;width:300px;height:300px;"></a>
+            </div>
+            <div class="col" id="cube6">
+                <div class="row">
+                    <div class="col d-flex justify-content-start">
+                        <button type="button" onclick="javascript:showLanguages()" class="btn rounded-circle btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">Spoken Languages</p></button>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col d-flex justify-content-start">
+                        <button type="button" onclick="javascript:showHobbies()"  class="btn rounded-circle btn-danger btn-around-pic pl-0 pr-0 mt-5 nobody"><p class="h5 text-white nobody">Hobbies</p></button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-3" id="cube7">
+               
+            </div>
+            <div class="col" id="cube8">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <button type="button" onclick="javascript:showDriverLicence()" class="btn rounded-circle btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">Driver Licence</p></button>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <button type="button" onclick="javascript:showAcademicDegree()"  class="btn rounded-circle  btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">Academic Degree</p></button>
+
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="col-3" id="cube9">
+                
+            </div>
+        </div>
+    </div>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        var centerElement = document.getElementById("elementCenter");
+        var centerImage = "url('./imagens/profile_pic.png')";
+        function click_on_page(event) {
+            if (event.target.classList.contains("nobody"))
+                return;
+            else {
+                centerElement.className = "btn btn-disabled rounded-circle nobody";
+                centerElement.innerHTML = "";
+                centerElement.style.backgroundImage = centerImage;
+                centerElement.style.backgroundPosition = "0% 0%";
+                centerElement.style.backgroundSize = "initial";
+            }
+
+        }
+        function showName() {
+            centerElement.style.backgroundImage = "";
+            centerElement.classList.add("bg-success",'text-center')
+            centerElement.innerHTML = "<p class='h3 text-white mt-5 pt-5 nobody'>Carlos Daniel Silva Pinto</p>";
+            
+        }
+        function showCity() {
+            centerElement.style.backgroundImage = "url('./imagens/aveiro.png')";
+            centerElement.style.backgroundSize = "initial";
+            centerElement.style.backgroundPosition = "initial";
+            centerElement.classList.add('text-center');
+            centerElement.classList.remove('bg-success');
+
+            centerElement.innerHTML = "<p class='h1 text-primary mt-5 pt-5 nobody'>Aveiro</p>";
+        }
+        function showNationality() {
+            centerElement.style.backgroundImage = "url('./imagens/portugal.png')";
+            centerElement.style.backgroundSize = "100% 100%";
+            centerElement.style.backgroundPosition = "0% 20%";
+            centerElement.classList.remove('bg-success');
+            centerElement.innerHTML = "";
+        }
+        function showBirthday() {
+            centerElement.style.backgroundImage = "";
+            centerElement.classList.add("bg-success", 'text-center');
+            centerElement.innerHTML = "<i class='fas fa-birthday-cake fa-10x pt-5 nobody'></i><p class='h3 text-white nobody'>16/11/1995</p>"
+        }
+        function showEmail() {
+            centerElement.style.backgroundImage = "";
+            centerElement.classList.add("bg-success", 'text-center');
+            centerElement.innerHTML = "<i class='fas fa-at fa-10x pt-3 nobody'></i><p class='h3 text-white nobody'>carlospinto.16111995<p class='h3 text-white nobody'>@gmail.com</p></p>";
+        }
+        function showAcademicDegree() {          
+            centerElement.style.backgroundImage = "";
+            centerElement.classList.add("bg-success", 'text-center');
+            centerElement.innerHTML = "<i class='fas fa-graduation-cap fa-10x pt-2 nobody'></i><p class='h3 text-white nobody'>Master's in Electrical and Computer Engineering</p>";
+        }
+        function showDriverLicence() {
+            
+            centerElement.style.backgroundImage = "";
+            centerElement.classList.add("bg-success", 'text-center');
+            centerElement.innerHTML = "<i class='fas fa-car fa-10x pt-2 nobody'></i><p class='h3 text-white nobody'>B/B1</p><p class='h3 text-white nobody'>13/12/2016</p>";
+        }
+
+        function showLanguages() {
+            centerElement.style.backgroundImage = "";
+            centerElement.classList.remove('bg-success');
+            centerElement.classList.add('text-center');
+            centerElement.innerHTML = '<div id="LanguageIndicators" class="carousel slide nobody" data-ride="carousel">'+
+            '<div class="carousel-inner nobody">'+
+			
+			
+                '<div class="container carousel-item active nobody">'+
+                '<img src=".\/imagens\/france.png" class="d-block w-100 nobody" alt="french flag">' +
+                '<p class="h3 nobody">French</p>'+
+                '</div>' +
+			
+                '<div class="container carousel-item  nobody">'+
+                '<img src=".\/imagens\/uk.png" class="d-block w-100 nobody" alt="United Kingdom flag">' +
+                '<p class="h3 nobody">English</p>'+
+                '</div>' +
+			
+                '<div class="container carousel-item  nobody">'+
+                '<img src=".\/imagens\/portugal.png" class="d-block w-100 nobody" alt="Portugal flag">' +
+                '<p class="h3 nobody">Portuguese</p>'+
+                '</div>' +
+			
+			
+                
+            '</div>'+
+            '<a class="carousel-control-prev nobody" href="#LanguageIndicators" role="button" data-slide="prev">'+
+                '<span class="fas fa-chevron-left fa-3x text-success nobody" aria-hidden="true"></span>'+
+                '<span class="sr-only nobody">Previous</span>'+
+            '</a>'+
+            '<a class="carousel-control-next nobody" href="#LanguageIndicators" role="button" data-slide="next">'+
+                '<span class="fas fa-chevron-right fa-3x text-success nobody" aria-hidden="true"></span>'+
+                '<span class="sr-only nobody">Next</span>'+
+            '</a>'+
+        '</div>';
+
+        }
+
+        function showHobbies() {
+            centerElement.style.backgroundImage = "";
+            centerElement.classList.remove('bg-success');
+            centerElement.classList.add('text-center');
+            centerElement.innerHTML = '<div id="HobbiesIndicators" class="carousel slide nobody" data-ride="carousel">' +
+                '<div class="carousel-inner nobody">' +
+			
+			
+                '<div class="container carousel-item active nobody">'+
+                '<i class="fas fa-fas fa-plane fa-10x pt-5 nobody"></i>' +
+                '<p class="h3">Travel</p>' +
+                '</div>' +
+			
+                '<div class="container carousel-item  nobody">'+
+                '<i class="fas fa-fas fa-running fa-10x pt-5 nobody"></i>' +
+                '<p class="h3">Running</p>' +
+                '</div>' +
+			
+                '<div class="container carousel-item  nobody">'+
+                '<i class="fas fa-fas fa-bicycle fa-10x pt-5 nobody"></i>' +
+                '<p class="h3">Mountain biking</p>' +
+                '</div>' +
+			
+                '<div class="container carousel-item  nobody">'+
+                '<i class="fas fa-fas fa-swimmer fa-10x pt-5 nobody"></i>' +
+                '<p class="h3">Swimming</p>' +
+                '</div>' +
+			
+                '<div class="container carousel-item  nobody">'+
+                '<i class="fas fa-fas fa-hiking fa-10x pt-5 nobody"></i>' +
+                '<p class="h3">Hiking</p>' +
+                '</div>' +
+			
+			
+             
+                '</div>' +
+                '<a class="carousel-control-prev nobody" href="#HobbiesIndicators" role="button" data-slide="prev">' +
+                '<span class="fas fa-chevron-left fa-3x text-success nobody" aria-hidden="true"></span>' +
+                '<span class="sr-only nobody">Previous</span>' +
+                '</a>' +
+                '<a class="carousel-control-next nobody " href="#HobbiesIndicators" role="button" data-slide="next">' +
+                '<span class="fas fa-chevron-right fa-3x text-success nobody" aria-hidden="true"></span>' +
+                '<span class="sr-only nobody">Next</span>' +
+                '</a>' +
+                '</div>';
+
+        }
+    </script>
+
+</body>
+</html>
