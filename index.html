@@ -19,31 +19,32 @@
 </head>
 
 <body onclick="javascript:click_on_page(event)">
-    <nav class="navbar navbar-expand navbar-dark bg-primary">
-        <a class="navbar-brand">
-            <img src="./imagens/cv.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="curriculum vitae icon">
-        </a>
-
-        <div class="nav float-left" id="navbarNav">
-            <ul class="nav">
-                <li class="nav-item ">
-                    <a class="nav-link text-white" href="./">About Me</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link text-white" href="./ah">Academic History</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link text-white" href="./ph">Professional History</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link text-white" href="./pa">Published Articles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./kl">Knowledge</a>
-                </li>
-            </ul>
+   <nav class="navbar navbar-expand navbar-dark bg-primary py-0">
+        <div class="container row w-100">
+            <div class="col">
+                <a class="nav-link text-white" href="./">About Me</a>
+            </div>
+            <div class="col">
+                <a class="nav-link text-white" href="./ah">Academic</a>
+            </div>
+            <div class="col">
+                <a class="nav-link text-white" href="./ph">Professional</a>
+            </div>
+            <div class="col">
+                <a class="nav-link text-white" href="./pa">Articles</a>
+            </div>
+            <div class="col">
+                <a class="nav-link text-white" href="./kl">Knowledge</a>
+            </div>
         </div>
-
+        <div class="container float-right text-right w-50 row">
+            <div class="col">
+                <a class="nav-link text-danger fab fa-linkedin fa-2x " href="https://www.linkedin.com/in/carlos-d-pinto/"></a>
+                <a class="nav-link text-danger fab fa-github fa-2x" href="https://github.com/carlos1995pinto"></a>
+                <a class="nav-link text-danger far fa-envelope fa-2x" href="mailto:carlospinto.16111995@gmail.com"></a>
+            </div>
+        
+        </div>
     </nav>
     <div class="container-fluid pt-4">
         <div class="row">
@@ -55,11 +56,10 @@
                         <button id="buttonName" type="button"  onclick="javascript:showName()" class="btn rounded-circle btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">Name</p></button>
                     </div>
                     <div class="col d-flex justify-content-center mb-4">
-                        <button type="button" onclick="javascript:showBirthday()"   class="btn rounded-circle  btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">Birthday</p></button>
 
                     </div>
                     <div class="col">
-                        <button type="button" onclick="javascript:showEmail()"  class="btn rounded-circle  btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">Email</p></button>
+                        <button type="button" onclick="javascript:showBirthday()"   class="btn rounded-circle  btn-danger btn-around-pic nobody"><p class="h5 text-white nobody">Birthday</p></button>
 
                     </div>
                 </div>
@@ -124,6 +124,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
     <script>
         var centerElement = document.getElementById("elementCenter");
         var centerImage = "url('./imagens/profile_pic.png')";
@@ -165,11 +166,6 @@
             centerElement.style.backgroundImage = "";
             centerElement.classList.add("bg-success", 'text-center');
             centerElement.innerHTML = "<i class='fas fa-birthday-cake fa-10x pt-5 nobody'></i><p class='h3 text-white nobody'>16/11/1995</p>"
-        }
-        function showEmail() {
-            centerElement.style.backgroundImage = "";
-            centerElement.classList.add("bg-success", 'text-center');
-            centerElement.innerHTML = "<i class='fas fa-at fa-10x pt-3 nobody'></i><p class='h3 text-white nobody'>carlospinto.16111995<p class='h3 text-white nobody'>@gmail.com</p></p>";
         }
         function showAcademicDegree() {          
             centerElement.style.backgroundImage = "";
